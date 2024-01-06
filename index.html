@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Herickie'</title>
+        <meta property="og:title" content="Herickie'">
+        <meta property="og:locale" content="ru_RU">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#32323D">
+        <link rel="shortcut icon" href="assets/images/shortcut.png" type="image/png">
+        <link rel="stylesheet" href="assets/fonts/style.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+      <div id="preloader"><span class="loader"></span></div>
+      <script>
+        document.body.style.overflow = 'hidden';
+        const loader = () => {
+            document.body.style.overflow = '';
+            const preloader = document.getElementById('preloader');
+            const fadeout = setInterval(() => {
+                const opacity = getComputedStyle(preloader).opacity;
+                opacity > 0 ? preloader.style.opacity = opacity - 0.05 : (clearInterval(fadeout), preloader.remove());
+            }, 15);
+        }
+        setTimeout(() => loader(), 2000);
+        </script>
+        
+        <div class="divider">
+          <span class="divtext material-icons">person</span>
+          <p class="divtext">Пользователь</p>
+        </div>
+        
+        <div class="header">
+          <img src="assets/images/prof.png" class="profpic"></img>
+          <p class="name">Herickie Kamado'</p>
+          <p class="desc">20 y.o beginner programmer</p>
+        </div>
+        
+        <div class="divider">
+          <span class="divtext material-icons">link</span>
+          <p class="divtext">Ссылки</p>
+        </div>
+        
+        <div class="list">
+          <a>
+            <img class="tg listpic" src="assets/images/telegram.svg"></img>
+            <div class="listinfo">
+              <div class="listname">Telegram</div>
+            </div>
+            <div class="actbtns">
+              <div class="listbtn" href="javascript://" onclick="location.href='https://t.me/herickie'">
+                <div class="material-icons">arrow_forward</div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <img class="vk listpic" src="assets/images/vk.svg"></img>
+            <div class="listinfo">
+              <div class="listname">Вконтакте</div>
+            </div>
+            <div class="actbtns">
+              <div class="listbtn" href="javascript://" onclick="location.href='https://vk.com/d_d_danya2023'">
+                <div class="material-icons">arrow_forward</div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <img class="github listpic" src="assets/images/github.svg"></img>
+            <div class="listinfo">
+              <div class="listname">Github</div>
+            </div>
+            <div class="actbtns">
+              <div class="listbtn" href="javascript://" onclick="location.href='https://github.com/Herickie/herickie.github.io'">
+                <div class="material-icons">code</div>
+              </div>
+              <div class="listbtn" href="javascript://" onclick="location.href='https://github.com/Herickie'">
+                <div class="material-icons">arrow_forward</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="divider">
+          <span class="divtext material-icons">work_outline</span>
+          <p class="divtext">Проекты</p>
+        </div>
+        
+        <div class="list">
+          <a>
+            <img class="listpic" src="assets/images/blog.png"></img>
+            <div class="listinfo">
+              <div class="listname">Херики'</div>
+              <div class="listdesc">Мой блог канал, новости, модификаций APK.</div>
+            </div>
+            <div class="actbtns">
+              <div class="listbtn" href="javascript://" onclick="location.href='https://t.me/herickie'">
+                <div class="material-icons">person_add</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="divider">
+          <span class="divtext material-icons">payment</span>
+          <p class="divtext">Донат</p>
+        </div>
+
+        <div class="list">
+          <a>
+            <img class="sber listpic" src="assets/images/sber.svg"></img>
+            <div class="listinfo">
+              <div class="listname">СберБанк</div>
+              <div class="listdesc">2202 2032 6520 4166</div>
+            </div>
+            <div class="actbtns">
+              <div class="listbtn" onclick="copy('2202 2032 6520 4166')">
+                <div class="material-icons">copy</div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="footer">
+          <p>Copyright © 2023-2024 - HerickieProject' - All Right Reserved</p>
+        </div>
+    </body>
+</html>
